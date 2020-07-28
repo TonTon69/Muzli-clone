@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Muzli-test</title>
+    <link
+      rel="stylesheet"
+      href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <div class="header-navbar">
+            <div class="header__logo-wrapper">
+              <a class="logo" href="">
+                <img
+                  src="./assets/image/logo-muzli.png"
+                  alt="Logo-muzli"
+                  class="icon-muzli"
+                />
+              </a>
+              <div class="title">
+                <div class="title-item">
+                  <span>Muzli Inspiration</span>
+                  <small>by InVision </small>
+                </div>
+                <label for="title-check-input">
+                  <i class="title-icon fas fa-sort-down"></i>
+                </label>
+              </div>
+
+              <input
+                hidden
+                type="checkbox"
+                class="title__input"
+                id="title-check-input"
+              />
+
+              <div class="title-notifi">
+                <ul class="title-notifi__item">
+                  <li class="title-notifi__list">
+                    <a class="title-notifi__link" href="">
+                      <img
+                        class="title-notifi__img"
+                        src="./assets/image/logo-muzli.png"
+                        alt=""
+                      />
+                      <span class="title-notifi__name">Search</span>
+                    </a>
+                  </li>
+                  <li class="title-notifi__list">
+                    <a class="title-notifi__link" href="">
+                      <img
+                        class="title-notifi__img"
+                        src="./assets/image/logo-muzli.png"
+                        alt=""
+                      />
+                      <span class="title-notifi__name">Colors</span>
+                    </a>
+                  </li>
+                  <li class="title-notifi__list">
+                    <a class="title-notifi__link" href="">
+                      <img
+                        class="title-notifi__img"
+                        src="./assets/image/logo-muzli.png"
+                        alt=""
+                      />
+                      <span class="title-notifi__name">Collections</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__search">
+              <i class="header__search-icon fas fa-search"></i>
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Search on Muzli"
+              />
+              <div class="header__search-select">
+                <span class="header__search-select-label">or Google</span>
+              </div>
+            </div>
+            <div class="pull-right">
+              <div class="header__submit">
+                <span class="header__submit-item">Submit a link</span>
+              </div>
+              <div class="header__history">
+                <i class="header__history-icon fas fa-bookmark"></i>
+              </div>
+              <div class="header__notification">
+                <i class="header__notification-icon fas fa-bell"></i>
+              </div>
+              <div class="header__setting">
+                <i class="header__setting-icon fas fa-cogs"></i>
+              </div>
+            </div>
+          </div>
+          <div class="header__settings">
+            <div class="header__settings-user">
+              <div class="header__settings-loggedIn">
+                <div class="header__settings-userInfo">
+                  <img
+                    src="./assets/image/ava.jpg"
+                    alt=""
+                    class="header__settings-userInfo--img"
+                  />
+                  <h5 class="header__settings-userInfo--item">
+                    HUỲNH MINH HOÀNG
+                    <span class="header__settings-userInfo--login"
+                      >via Facebook</span
+                    >
+                  </h5>
+                  <a href="" class="header__settings-logOut--link">
+                    <span class="header__settings-logOut--title">Logout</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__settings-layout">
+              <h5 class="header__settings-layout--title">VIEW PREFERENCES</h5>
+              <ul class="header__settings-layout--item">
+                <li class="header__settings-layout--list">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <h2 class="header__settings-layout--name">
+                    Enable most visitied
+                  </h2>
+                </li>
+                <li class="header__settings-layout--list">
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                  <h2 class="header__settings-layout--name">
+                    Full view on load
+                  </h2>
+                </li>
+              </ul>
+              <div class="header__settings-layout--priview"></div>
+            </div>
+            <div class="header__settings-defaults">
+              <div class="header__settings-defaults--setting">
+                <h5 class="header__settings-defaults--name">
+                  Preferred content
+                </h5>
+                <div class="dropdown">
+                  <select
+                    name="province"
+                    id="province"
+                    class="header__settings-defaults--select"
+                  >
+                    <option
+                      class="header__settings-defaults--select-name"
+                      value="tech"
+                      >Tech</option
+                    >
+                    <option
+                      class="header__settings-defaults--select-name"
+                      value="design"
+                      >Design</option
+                    >
+                    <option
+                      class="header__settings-defaults--select-name"
+                      value="technology"
+                      >Technology</option
+                    >
+                    <option
+                      class="header__settings-defaults--select-name"
+                      value="news"
+                      >News</option
+                    >
+                    <option
+                      class="header__settings-defaults--select-name"
+                      value="cluture"
+                      >Culture</option
+                    >
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="header__settings-defaults2">
+              <div class="toggle">
+                <h5 class="toogle-title">Color theme</h5>
+                <div class="toggle-themeToggle">
+                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                    <i class="toggle-icon__open fas fa-check"></i>
+                  </button>
+                  <button
+                    class="toggle-themeToggle__yN toggle-dark"
+                    onclick="myFunction()"
+                  >
+                    <i
+                      class="toggle-icon__close toggle-icon__dark fas fa-times"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <div class="toggle">
+                <h5 class="toogle-title">
+                  Show content suggestions for outgoing links
+                </h5>
+                <div class="toggle-themeToggle">
+                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                    <i class="toggle-icon__open fas fa-check"></i>
+                  </button>
+                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                    <i class="toggle-icon__close fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="toggle toggle-change">
+                <h5 class="toogle-title">Show color palettes on cards</h5>
+                <div class="toggle-themeToggle toggle-themeToggle__change">
+                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                    <i class="toggle-icon__open fas fa-check"></i>
+                  </button>
+                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                    <i class="toggle-icon__close fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header__settings-links">
+              <div class="contact">
+                <ul class="contact-item">
+                  <li class="contact-list">
+                    <a href="" class="contact-link">General feedback</a>
+                  </li>
+                  <li class="contact-list">
+                    <a href="" class="contact-link">Suggest a link</a>
+                  </li>
+                  <li class="contact-list">
+                    <a href="" class="contact-link"
+                      >Subscribe to our weekly digest</a
+                    >
+                  </li>
+                  <li class="contact-list">
+                    <a href="" class="contact-link">Report a bug</a>
+                  </li>
+                  <li class="contact-list">
+                    <a href="" class="contact-link">Privacy Policy</a>
+                  </li>
+                  <li class="contact-list">
+                    <a href="" class="contact-link">Terms of Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__settings-uninstall">
+              <div class="header__settings-uninstallMuzli">
+                <a href="" class="header__settings-uninstall--link"
+                  >Uninstall Muzli</a
+                >
+              </div>
+            </div>
+            <div class="header__settings-social">
+              <div class="header__settings-social--list">
+                <p class="pull-left">Also follow Muzli in</p>
+                <div class="pull-right">
+                  <a href="" class="pullRight__instargam-link">
+                    <i class="pullRight-icon fab fa-instagram-square"></i>
+                  </a>
+                  <a href="" class="pullRight__medium-link">
+                    <i class="pullRight-icon fab fa-medium"></i>
+                  </a>
+                  <a href="" class="pullRight__facebook-link">
+                    <i class="pullRight-icon fab fa-facebook-square"></i>
+                  </a>
+                  <a href="" class="pullRight__twitter-link">
+                    <i class="pullRight-icon fab fa-twitter-square"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="subscribe">
+                <a href="" class="subscribe-muzli">HTTPS://MUZ.LI</a>
+                <a href="" class="subscribe-copy">Copy to clipboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
