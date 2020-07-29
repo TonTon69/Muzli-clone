@@ -34,7 +34,7 @@
               <div class="title">
                 <div class="title-item">
                   <span>Muzli Inspiration</span>
-                  <small>by InVision </small>
+                  <small class="title-item__name">by InVision </small>
                 </div>
                 <label for="title-check-input">
                   <i class="title-icon fas fa-sort-down"></i>
@@ -47,8 +47,8 @@
                 class="title__input"
                 id="title-check-input"
               />
-
-              <div class="title-notifi">
+              <label for="title-check-input" class="overlay"></label>
+              <label for="title-check-input" id="overlay" class="title-notifi">
                 <ul class="title-notifi__item">
                   <li class="title-notifi__list">
                     <a class="title-notifi__link" href="">
@@ -81,7 +81,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </label>
             </div>
             <div class="header__search">
               <i class="header__search-icon fas fa-search"></i>
@@ -97,19 +97,45 @@
             <div class="pull-right">
               <div class="header__submit">
                 <span class="header__submit-item">Submit a link</span>
+                <div class="header__submit-noti">
+                  <h5 class="header__submit-noti--name">
+                    Share something with us!
+                  </h5>
+                </div>
               </div>
+
               <div class="header__history">
                 <i class="header__history-icon fas fa-bookmark"></i>
+                <div class="header__history-noti">
+                  <h5 class="header__history-noti--name">
+                    Saved items
+                  </h5>
+                </div>
               </div>
               <div class="header__notification">
                 <i class="header__notification-icon fas fa-bell"></i>
+                <div class="header__notification-noti">
+                  <h5 class="header__notification-noti--name">
+                    Notifications
+                  </h5>
+                </div>
               </div>
-              <div class="header__setting">
+              <label for="checkInput" class="header__setting">
                 <i class="header__setting-icon fas fa-cogs"></i>
-              </div>
+              </label>
             </div>
           </div>
-          <div class="header__settings">
+
+          <input
+            hidden
+            class="checkInput-title"
+            type="checkbox"
+            name=""
+            id="checkInput"
+          />
+
+          <label for="checkInput" class="overlay"></label>
+          <label id="overlay" for="checkInput" class="header__settings">
             <div class="header__settings-user">
               <div class="header__settings-loggedIn">
                 <div class="header__settings-userInfo">
@@ -292,7 +318,7 @@
                 <a href="" class="subscribe-copy">Copy to clipboard</a>
               </div>
             </div>
-          </div>
+          </label>
         </div>
       </header>
 
