@@ -1,5 +1,15 @@
 :root {
   --header-height: 67px;
+
+  --white: white;
+  --black: black;
+  --gray: #fafafa;
+}
+
+[data-theme="dark"] {
+  --white: black;
+  --black: white;
+  --gray: black;
 }
 
 * {

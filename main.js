@@ -1,4 +1,8 @@
-function myFunction() {
+function darkMode() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+  element.className = "dark-mode";
+}
+function lightMode() {
+  var element = document.body;
+  element.className = "";
 }
