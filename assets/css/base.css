@@ -15,7 +15,14 @@
 * {
   box-sizing: inherit;
 }
-
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
