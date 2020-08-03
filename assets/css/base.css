@@ -11,7 +11,13 @@
   --black: white;
   --gray: black;
 }
-
+body {
+  background-color: white;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 * {
   box-sizing: inherit;
 }
@@ -40,4 +46,12 @@ html {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.01);
   cursor: pointer;
+}
+.overlay-img {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  opacity: 1;
 }

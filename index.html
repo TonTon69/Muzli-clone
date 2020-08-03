@@ -226,14 +226,18 @@
                 <div class="toggle-themeToggle">
                   <button class="toggle-themeToggle__yN" onclick="lightMode()">
                     <i class="toggle-icon__open fas fa-check"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Light theme</h5>
+                    </span>
                   </button>
                   <button
                     class="toggle-themeToggle__yN toggle-dark"
                     onclick="darkMode()"
                   >
-                    <i
-                      class="toggle-icon__close toggle-icon__dark fas fa-times"
-                    ></i>
+                    <i class="toggle-icon__close toggle-icon__dark fas fa-times"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Dark theme</h5>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -242,22 +246,34 @@
                   Show content suggestions for outgoing links
                 </h5>
                 <div class="toggle-themeToggle">
-                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                  <button class="toggle-themeToggle__yN" >
                     <i class="toggle-icon__open fas fa-check"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Show suggestions</h5>
+                    </span>
                   </button>
-                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                  <button class="toggle-themeToggle__yN" >
                     <i class="toggle-icon__close fas fa-times"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Don't show suggestions</h5>
+                    </span>
                   </button>
                 </div>
               </div>
               <div class="toggle toggle-change">
                 <h5 class="toogle-title">Show color palettes on cards</h5>
                 <div class="toggle-themeToggle toggle-themeToggle__change">
-                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                  <button class="toggle-themeToggle__yN" >
                     <i class="toggle-icon__open fas fa-check"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Show palettes</h5>
+                    </span>
                   </button>
-                  <button class="toggle-themeToggle__yN" onclick="myFunction()">
+                  <button class="toggle-themeToggle__yN">
                     <i class="toggle-icon__close fas fa-times"></i>
+                    <span class="theme">
+                      <h5 class="theme-item">Don't show palettes</h5>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -299,17 +315,29 @@
               <div class="header__settings-social--list">
                 <p class="pull-left">Also follow Muzli in</p>
                 <div class="pull-right">
-                  <a href="" class="pullRight__instargam-link">
+                  <a href="" class="pullRight-link pullRight__instargam-link">
                     <i class="pullRight-icon fab fa-instagram-square"></i>
+                    <span class="pullRight-item">
+                      <h5 class="pullRight-item-name">Follow on Instagram</h5>
+                    </span>
                   </a>
-                  <a href="" class="pullRight__medium-link">
+                  <a href="" class="pullRight-link pullRight__medium-link">
                     <i class="pullRight-icon fab fa-medium"></i>
+                    <span class="pullRight-item">
+                      <h5 class="pullRight-item-name">Check on Medium</h5>
+                    </span>
                   </a>
-                  <a href="" class="pullRight__facebook-link">
+                  <a href="" class="pullRight-link pullRight__facebook-link">
                     <i class="pullRight-icon fab fa-facebook-square"></i>
+                    <span class="pullRight-item">
+                      <h5 class="pullRight-item-name">Check on Facebook</h5>
+                    </span>
                   </a>
-                  <a href="" class="pullRight__twitter-link">
+                  <a href="" class="pullRight-link pullRight__twitter-link">
                     <i class="pullRight-icon fab fa-twitter-square"></i>
+                    <span class="pullRight-item pullRight-item-sub">
+                      <h5 class="pullRight-item-name pullRight-item-name--sub">Follow on Twitter</h5>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -329,12 +357,15 @@
               <div class="mostVisitedContainer">
                 <ul class="mostVisited">
                   <li
-                    class="mostVisited-list"
+                    class="mostVisited-list "
                     style="
                       background-image: url(https://logo.clearbit.com/google.com.vn);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-gg">
+                      <span class="mostVisited-link-gg--item">google.com.vn</span> 
+                    </a>
+                    
                   </li>
                   <li
                     class="mostVisited-list"
@@ -342,7 +373,9 @@
                       background-image: url(https://logo.clearbit.com/github.com);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-github">
+                      <span class="mostVisited-link-github--item">github.com</span> 
+                    </a>
                   </li>
                   <li
                     class="mostVisited-list"
@@ -350,7 +383,9 @@
                       background-image: url(https://logo.clearbit.com/daotao.hutech.edu.vn);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-hutech">
+                      <span class="mostVisited-link-hutech--item">daotao.hutech.edu.vn</span>
+                    </a>
                   </li>
                   <li
                     class="mostVisited-list"
@@ -358,7 +393,9 @@
                       background-image: url(https://logo.clearbit.com/netacad.com);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-netacad">
+                      <span class="mostVisited-link-netacad--item">netacad.com</span>
+                    </a>
                   </li>
                   <li
                     class="mostVisited-list"
@@ -366,7 +403,9 @@
                       background-image: url(https://logo.clearbit.com/fontawesome.com);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-fontawesome">
+                      <span class="mostVisited-link-fontawesome--item">fontawesome.com</span>
+                    </a>
                   </li>
                   <li
                     class="mostVisited-list"
@@ -374,23 +413,31 @@
                       background-image: url(https://logo.clearbit.com/youtube.com);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-youtube">
+                      <span class="mostVisited-link-youtube--item">youtube.com</span>
+                    </a>
                   </li>
                   <li
-                    class="mostVisited-list"
+                    class="mostVisited-list mostVisited-list-gg"
                     style="
                       background-image: url(https://logo.clearbit.com/google.com.vn);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-gg">
+                      <span class="mostVisited-link-gg--item">google.com.vn</span> 
+                    </a>
+                    
                   </li>
                   <li
-                    class="mostVisited-list"
+                    class="mostVisited-list mostVisited-list-gg"
                     style="
                       background-image: url(https://logo.clearbit.com/google.com.vn);
                     "
                   >
-                    <a href="" class="mostVisited-link"></a>
+                    <a href="" class="mostVisited-link mostVisited-link-gg">
+                      <span class="mostVisited-link-gg--item">google.com.vn</span> 
+                    </a>
+                    
                   </li>
                 </ul>
               </div>
@@ -402,18 +449,22 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
-
+                    <div class="overlay-img"></div>
                     <img
                       src="./assets/image/Frank_Kunert-1.jpg"
                       alt=""
@@ -457,17 +508,22 @@
                         <div class="home-show-share">
                           <span class="home-show-share__icon fb-icon">
                             <i class="fab fa-facebook-f"></i>
+                            <div class="fb-icon-share">Share on Facebook</div>
                           </span>
                           <span class="home-show-share__icon twitter-icon">
                             <i class="fab fa-twitter"></i>
+                            <div class="twitter-icon-share">Share on Twitter</div>
                           </span>
                           <span class="home-show-share__icon linkedin-icon">
                             <i class="fab fa-linkedin-in"></i>
+                            <div class="linkedin-icon-share">Share on Linkedin</div>
                           </span>
                           <span class="home-show-share__icon slack-icon">
                             <i class="fab fa-slack"></i>
+                            <div class="slack-icon-share">Share on Slack</div>
                           </span>
                         </div>
+                        <div class="overlay-img"></div>
 
                         <img
                           src="./assets/image/socialinvestor-1-1.jpg"
@@ -503,21 +559,25 @@
                     </div>
                     <div class="col l-6">
                       <a class="home-show-link" href="">
-                        <div class="home-show-share home-show-share--link">
+                        <div class="home-show-share">
                           <span class="home-show-share__icon fb-icon">
                             <i class="fab fa-facebook-f"></i>
+                            <div class="fb-icon-share">Share on Facebook</div>
                           </span>
                           <span class="home-show-share__icon twitter-icon">
                             <i class="fab fa-twitter"></i>
+                            <div class="twitter-icon-share">Share on Twitter</div>
                           </span>
                           <span class="home-show-share__icon linkedin-icon">
                             <i class="fab fa-linkedin-in"></i>
+                            <div class="linkedin-icon-share">Share on Linkedin</div>
                           </span>
                           <span class="home-show-share__icon slack-icon">
                             <i class="fab fa-slack"></i>
+                            <div class="slack-icon-share">Share on Slack</div>
                           </span>
                         </div>
-
+                        <div class="overlay-img"></div>                      
                         <img
                           src="./assets/image/bythebook-1.jpg"
                           alt=""
@@ -554,18 +614,22 @@
                         <div class="home-show-share">
                           <span class="home-show-share__icon fb-icon">
                             <i class="fab fa-facebook-f"></i>
+                            <div class="fb-icon-share">Share on Facebook</div>
                           </span>
                           <span class="home-show-share__icon twitter-icon">
                             <i class="fab fa-twitter"></i>
+                            <div class="twitter-icon-share">Share on Twitter</div>
                           </span>
                           <span class="home-show-share__icon linkedin-icon">
                             <i class="fab fa-linkedin-in"></i>
+                            <div class="linkedin-icon-share">Share on Linkedin</div>
                           </span>
                           <span class="home-show-share__icon slack-icon">
                             <i class="fab fa-slack"></i>
+                            <div class="slack-icon-share">Share on Slack</div>
                           </span>
                         </div>
-
+                        <div class="overlay-img"></div>   
                         <img
                           src="./assets/image/7b3a4135b743e4a74031518401fb7eb6 (1).jpg"
                           alt=""
@@ -602,18 +666,22 @@
                         <div class="home-show-share">
                           <span class="home-show-share__icon fb-icon">
                             <i class="fab fa-facebook-f"></i>
+                            <div class="fb-icon-share">Share on Facebook</div>
                           </span>
                           <span class="home-show-share__icon twitter-icon">
                             <i class="fab fa-twitter"></i>
+                            <div class="twitter-icon-share">Share on Twitter</div>
                           </span>
                           <span class="home-show-share__icon linkedin-icon">
                             <i class="fab fa-linkedin-in"></i>
+                            <div class="linkedin-icon-share">Share on Linkedin</div>
                           </span>
                           <span class="home-show-share__icon slack-icon">
                             <i class="fab fa-slack"></i>
+                            <div class="slack-icon-share">Share on Slack</div>
                           </span>
                         </div>
-
+                        <div class="overlay-img"></div>   
                         <img
                           src="./assets/image/Good-Design-1.jpg"
                           alt=""
@@ -653,17 +721,15 @@
             <div class="row home-visible">
               <div class="menu">
                 <nav class="category">
-                  <a href="" class="category-link category-highlights"
-                    >Your Highlights</a
-                  >
-                  <a href="" class="category-link category-tech">Tech</a>
-                  <a href="" class="category-link category-trending">
+                  <a href="" class="category-link category-highlights"> Your Highlights</a>
+                  <a href="" class="category-link category-link-item category-tech">Tech</a>
+                  <a href="" class="category-link category-link-item category-trending">
                     <i class="category-trending-icon fas fa-level-up-alt"></i>
                     <span>Trending</span>
                   </a>
-                  <a href="" class="category-link category-design">Design</a>
-                  <a href="" class="category-link category-culture">Culture</a>
-                  <a href="" class="category-link category-news">News</a>
+                  <a href="" class="category-link category-link-item category-design">Design</a>
+                  <a href="" class="category-link category-link-item category-culture">Culture</a>
+                  <a href="" class="category-link category-link-item category-news">News</a>
                 </nav>
               </div>
 
@@ -673,15 +739,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -720,15 +790,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -766,15 +840,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -812,15 +890,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -858,15 +940,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -904,15 +990,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -950,15 +1040,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
@@ -996,15 +1090,19 @@
                     <div class="home-show-share">
                       <span class="home-show-share__icon fb-icon">
                         <i class="fab fa-facebook-f"></i>
+                        <div class="fb-icon-share">Share on Facebook</div>
                       </span>
                       <span class="home-show-share__icon twitter-icon">
                         <i class="fab fa-twitter"></i>
+                        <div class="twitter-icon-share">Share on Twitter</div>
                       </span>
                       <span class="home-show-share__icon linkedin-icon">
                         <i class="fab fa-linkedin-in"></i>
+                        <div class="linkedin-icon-share">Share on Linkedin</div>
                       </span>
                       <span class="home-show-share__icon slack-icon">
                         <i class="fab fa-slack"></i>
+                        <div class="slack-icon-share">Share on Slack</div>
                       </span>
                     </div>
                     <img
