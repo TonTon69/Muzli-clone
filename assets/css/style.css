@@ -1440,3 +1440,59 @@ input:checked + .slider::before {
   z-index: 0;
   background-color: var(--white);
 }
+
+.shortcuts {
+  position: fixed;
+  top: 67px;
+  left: 0;
+  height: 100%;
+  width: 68px;
+  background-color: #333;
+
+  text-align: center;
+}
+
+.home-active-item {
+  overflow: auto;
+  padding: 25px 14px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.home-active-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 0;
+}
+.home-active-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+.home-active-list.home-active-list--home {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2e54ff;
+  z-index: 2;
+}
+.home-active-list.home-active-list--home::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 1.5px solid #2e54ff;
+  z-index: -1;
+}
+.product-hunt-icon {
+  font-size: 32px;
+}
+.ellipsis-icon {
+  color: #999;
+}
