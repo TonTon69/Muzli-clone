@@ -33,11 +33,11 @@ body {
   display: flex;
 }
 .icon-muzli {
-  width: 55px;
-
-  margin: 14px 0 0 12px;
-  padding-right: 10px;
+  width: 68px;
+  margin: 12px 0 0 12px;
+  padding-right: 14px;
 }
+
 .logo {
   border-right: 0.5px solid rgba(0, 0, 0, 0.1);
 }
@@ -1446,15 +1446,15 @@ input:checked + .slider::before {
   top: 67px;
   left: 0;
   height: 100%;
-  width: 68px;
-  background-color: #333;
+  width: 80px;
+  background-color: var(--white);
 
   text-align: center;
 }
 
 .home-active-item {
   overflow: auto;
-  padding: 25px 14px;
+  padding: 44px 20px;
   box-sizing: border-box;
   margin: auto;
 }
@@ -1473,26 +1473,75 @@ input:checked + .slider::before {
   color: var(--white);
   font-size: 1.8rem;
 }
-.home-active-list.home-active-list--home {
+.home-active-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home-active-link.home-active-link--status::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.home-active-link.home-active-link--home {
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #2e54ff;
-  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home-active-list.home-active-list--home::after {
+.home-active-link.home-active-link--home::before {
   position: absolute;
   content: "";
   width: 48px;
   height: 48px;
+  top: -6px;
+  right: -5px;
   background-color: var(--white);
   border-radius: 50%;
   border: 1.5px solid #2e54ff;
   z-index: -1;
 }
 .product-hunt-icon {
-  font-size: 32px;
+  font-size: 34px;
 }
 .ellipsis-icon {
   color: #999;
+  font-size: 2.6rem;
+}
+.pen-icon {
+  font-size: 14px;
+}
+.home-active-link.home-active-link--pen {
+  position: relative;
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  background-color: var(--white);
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-active-link.home-active-link--pen::before {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: -5px;
+
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: green;
 }
