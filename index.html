@@ -90,13 +90,13 @@
               </div>
             </div>
             <div class="pull-right">
-              <div class="header__submit">
+              <div id="submitBtn" class="header__submit">
                 <span class="header__submit-item">Submit a link</span>
                 <div class="header__submit-noti">
                   <h5 class="header__submit-noti--name">
                     Share something with us!
                   </h5>
-                </div>
+                </div>                          
               </div>
 
               <div class="header__history">
@@ -113,6 +113,32 @@
                   <h5 class="header__notification-noti--name">
                     Notifications
                   </h5>
+                </div>
+                
+                <div id="bellModal" class="overlay">
+                  <div class="header__notification-history">
+                    <h3>You have 0 new messages</h3>
+                    <div class="header__notification-history--messages">
+                      <div class="messages-avatar">
+                        <img src="./assets/image/logoMuzli.png" alt="">
+                      </div>                 
+                      <div class="messages-share">
+                        <h5>Jun 17</h5>
+                        <p>If you like what we do, please tell your friends and share the love for Muzli.</p>
+                        <div class="messages-share-cta">
+                          <a href="" class="messages-share-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                            
+                          </a>
+                          <a href="" class="messages-share-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <label for="checkInput" class="header__setting">
@@ -345,15 +371,42 @@
         </div>
       </header>
 
+      <div id="overlaySubmit" class="overlay-submit">
+        <div class="header__submit-notifaction">
+          <div class="submit-wrapper">
+            <form action="" class="form-submit">
+              <h3 class="form-submit-heading">Share something great with us</h3>
+              <p>New and awesome design content will be added to our network, and may even end up on the Muzli Picks feed.</p>
+              <input type="text" placeholder="Page URL" class="submit-input">
+              <label for="">
+                <input type="checkbox" name="" id="">
+                <span>I’ve created this</span>
+              </label>
+              <div class="form-submit-share">
+                <button type="submit">Share</button>
+              </div>
+            </form>
+            <div class="guidelines">
+              <h3>Sharing guidelines</h3>
+              <p>We accept quality design/visual projects, animations, 3D, UI/UX prototypes, or any other visual design project.</p>
+              <p>We don’t accept content that is promotional, copyrighted, trademarked, or inappropriate.</p>
+              <p>Read the full
+                <a href="">content guidelines</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <div class="shortcuts active">
           <ul class="home-active-item">
             <li class="home-active-list">
               <a href="" class="home-active-link">
-                <div style="background-image: url(https://i.dlpng.com/static/png/5377641-home-icon-png-transparent-94-images-in-collection-page-1-home-icon-png-900_900_preview.png)" class="home-active-icon">
-                  <div class="home-page-notification">
+                <div style="background-image: url(https://w7.pngwing.com/pngs/322/368/png-transparent-white-house-illustration-home-page-computer-icons-website-world-wide-web-blue-home-page-icon-miscellaneous-trademark-logo.png)" class="home-active-icon">
+                  <!-- <div class="home-page-notification">
                     HOME PAGE
-                  </div>  
+                  </div>   -->
                 </div>
               </a>
             </li>
