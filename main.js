@@ -11,8 +11,10 @@ function lightMode() {
 // DOM Event
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
+
 var submitBtn = document.getElementById("submitBtn");
 var submitModal = document.getElementById("overlaySubmit");
+
 var bell = document.querySelector(".header__notification");
 var bellElement = document.getElementById("bellModal");
 var bellNoti = document.querySelector(".header__notification-noti");
@@ -49,5 +51,9 @@ tabElement.onclick = function (e) {
     shortcusElement.style.transform = "translateX(-81px)";
     shortcusElement.style.transition = "transform 0.15s ease-in-out";
     iconTab.style.transform = "scaleX(-1)";
+  } else {
+    shortcusElement.style.transform = "translateX(0)";
+    shortcusElement.style.transition = "transform 0.15s ease-in-out";
+    iconTab.style.transform = "scaleX(0)";
   }
 };
