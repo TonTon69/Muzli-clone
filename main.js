@@ -1,13 +1,3 @@
-// Dark-Light Mode
-function darkMode() {
-  var element = document.body;
-  element.className = "dark-mode";
-}
-function lightMode() {
-  var element = document.body;
-  element.className = "";
-}
-
 // DOM Event
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
@@ -51,9 +41,20 @@ tabElement.onclick = function (e) {
     shortcusElement.style.transform = "translateX(-81px)";
     shortcusElement.style.transition = "transform 0.15s ease-in-out";
     iconTab.style.transform = "scaleX(-1)";
-  } else {
-    shortcusElement.style.transform = "translateX(0)";
-    shortcusElement.style.transition = "transform 0.15s ease-in-out";
-    iconTab.style.transform = "scaleX(0)";
   }
+  // else {
+  //   shortcusElement.style.transform = "translateX(0)";
+  //   shortcusElement.style.transition = "transform 0.15s ease-in-out";
+  //   iconTab.style.transform = "scaleX(0)";
+  // }
 };
+
+// Dark-Light Mode
+function darkMode() {
+  var element = document.body;
+  element.className = "dark-mode";
+}
+function lightMode() {
+  var element = document.body;
+  element.className = "light-mode";
+}
