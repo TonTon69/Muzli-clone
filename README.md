@@ -1,2 +1,5 @@
 # :watermelon: TonTon Muzli Clone
-html-css-js
+
+* frontend: html-css-js; updating nodejs, exoressjs
+* backend: updating...
+* database: updating mongodb
